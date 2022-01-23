@@ -80,9 +80,9 @@ const Contact = () => {
             draggable
             pauseOnHover
           />
-          <form action="" onSubmit={handelSubmit}>
+          <form data-aos="fade-up" action="" onSubmit={handelSubmit}>
             <div className="contactdetails">
-              <div data-aos="fade-up" className="inputLabel">
+              <div className="inputLabel">
                 {/* <label htmlFor="name">Name</label> */}
                 <input
                   type="text"
@@ -94,7 +94,7 @@ const Contact = () => {
                   // required="true"
                 />
               </div>
-              <div data-aos="fade-up" className="inputLabel">
+              <div className="inputLabel">
                 {/* <label htmlFor="email">Email</label> */}
                 <input
                   type="email"
@@ -106,7 +106,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div data-aos="fade-up" className="subject">
+            <div className="subject">
               <div className="inputLabel">
                 {/* <label htmlFor="subject">Subject</label> */}
                 <input
@@ -119,7 +119,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div data-aos="fade-up" className="message">
+            <div className="message">
               <div className="inputLabel">
                 {/* <label htmlFor="message">Message</label> */}
                 <textarea
@@ -133,7 +133,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div data-aos="fade-up" className="submitbtn">
+            <div className="submitbtn">
               <button type="submit">
                 {mailSent ? "Submit" : "Sending..."}
               </button>
