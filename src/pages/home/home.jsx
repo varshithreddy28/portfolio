@@ -56,9 +56,7 @@ export default function Home() {
           </div>
           <div className="discription">
             <span>
-              I am a self-taught programmer, so I can adapt to the problem that
-              A project might have. I am passionate about programming that's why
-              I am always excited to learn new things.
+              I am a self-taught programmer, so I can adapt to the problem that A project might have. I'm passionate about programming, so I'm always enthusiastic about learning new things.
             </span>
           </div>
           <div className="contactme">
