@@ -1,0 +1,8 @@
+.bottomHome img {
+  display: none;
+}
+@media only screen and (max-width: 920px) {
+  .bottomHome img {
+    display: block;
+  }
+}

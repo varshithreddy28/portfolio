@@ -1,0 +1,132 @@
+.homePage {
+  width: 100%;
+  height: 90vh;
+  /* margin-top: 5rem; */
+  color: var(--textcolor);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+}
+/* 
+.bottomHome img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+} */
+
+.contacticons a img {
+  width: 2em;
+}
+span.intro {
+  font-size: 1.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typeeffect {
+  font-size: 3em;
+  color: #ced6b2;
+}
+div.discription {
+  margin-top: 1.2rem;
+  font-size: 1.4em;
+}
+.contacticons {
+  display: inline-flex;
+  gap: 30px;
+  margin-bottom: 1.2rem;
+}
+span#name {
+  color: #a904ee;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+.contactme {
+  margin: 2em 0;
+  gap: 5rem;
+  display: inline-flex;
+}
+a#hireme {
+  background: #dbd8e3;
+  padding: 12px 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: #1a1c22;
+  border: 2px solid #dbd8e3;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+button#getresume {
+  background: #dbd8e3;
+  padding: 11px 24px;
+  border: 2px solid #dbd8e3;
+  border-radius: 5px;
+  color: #1a1c22;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: transform 0.2s;
+}
+
+a#hireme:hover {
+  transform: scale(1.2);
+  background-color: white;
+  color: #000;
+}
+button#getresume:hover {
+  transform: scale(1.2);
+  background-color: white;
+  color: #000;
+}
+
+.details {
+  width: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+  .homePage {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  /* .homePage {
+    height: 92vh;
+  } */
+  span.intro {
+    font-size: 26px;
+  }
+  .typeeffect {
+    font-size: 2.1em;
+  }
+  div.discription {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  span.intro {
+    font-size: 20px;
+  }
+  .typeeffect {
+    font-size: 20px;
+  }
+  div.discription {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  a#hireme,
+  button#getresume {
+    padding: 8px 18px;
+    letter-spacing: normal;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .homePage {
+    height: 100vh;
+  }
+}
