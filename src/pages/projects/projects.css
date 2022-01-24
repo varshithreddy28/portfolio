@@ -2,8 +2,9 @@
   width: 100%;
   height: auto;
   /* background-color: aqua; */
-  color: var(--projecttext);
+  color: var(--textcolor);
   text-align: inherit;
+  background-color: var(--background);
 }
 .projectHeader {
   padding: 3rem 0;
@@ -25,11 +26,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 6em;
+  grid-gap: 2%;
 }
 .project_rev {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 6em;
+  grid-gap: 2.5%;
 }
 .title {
   font-size: 2.4em;
@@ -39,12 +42,13 @@
 }
 .projectdisc {
   font-size: 1.2em;
-  font-weight: 320;
+  font-weight: inherit;
   margin: 1rem 0;
 }
 svg.techIcons {
   font-size: 2em;
   margin: 10px 8px;
+  color: var(--iconcolor);
 }
 .projectbuttons {
   display: inline-flex;
@@ -70,11 +74,11 @@ svg.techIcons {
 .projectbuttons a.code {
   text-decoration: none;
   /* background: #00568f; */
-  color: white;
+  color: var(--textcolor);
   border: 1.5px solid #00568f;
   padding: 8px 22px;
   border-radius: 2px;
-  font-weight: 600;
+  font-weight: 650;
   letter-spacing: 1.5px;
 }
 
@@ -85,9 +89,9 @@ svg.techIcons {
   border: 1.5px solid #00568f;
   padding: 8px 22px;
   border-radius: 2px;
-  font-weight: 600;
+  font-weight: 650;
   letter-spacing: 1.5px;
-  color: white;
+  color: var(--textcolor);
 }
 .dropdown {
   position: relative;
@@ -118,7 +122,19 @@ svg.techIcons {
   display: block;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1320px) {
+  .title {
+    font-size: 2.1em;
+  }
+  .projectdisc {
+    margin: 0.2em 0 2px 0;
+  }
+  .projectbuttons {
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
   .project {
     display: block;
   }
@@ -132,10 +148,11 @@ svg.techIcons {
   }
   .title {
     text-align: center;
-    margin-top: 18px;
+    margin-top: 1.2em;
   }
   .projectdisc {
     text-align: left;
+    margin: 0.75em 0;
   }
   .projecticons {
     display: flex;
@@ -145,13 +162,24 @@ svg.techIcons {
   }
   .projectbuttons {
     display: flex;
-
     justify-content: center;
     align-items: center;
+    margin-top: 0.75em;
   }
 }
 @media only screen and (min-width: 1550px) {
   .projectsPage {
     height: 100vh;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .projectdisc {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .projecticons {
+    flex-wrap: wrap;
+    font-size: small;
   }
 }

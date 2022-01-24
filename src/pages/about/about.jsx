@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import Proud from "../../assets/pic.svg";
+import ProudDark from "../../assets/picDark.svg";
 import {
   MdDesignServices,
   MdHomeRepairService,
@@ -8,7 +9,7 @@ import {
 } from "react-icons/md";
 import { AiFillCode } from "react-icons/ai";
 import { FaServer } from "react-icons/fa";
-export const About = () => {
+export const About = ({ theme }) => {
   return (
     <div className="aboutPage " id="skills">
       <div className="container" id="about">

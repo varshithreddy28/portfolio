@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import './App.css';
 import ScrollToTop from "react-scroll-to-top";
@@ -23,15 +23,25 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const [theme, setTheme] = useState(true);
+
+  // true : dark , false : light
+
+  useEffect(() => {
+    console.log(theme)
+  }, [theme]);
+
+
   return (
-    <div className="App">
+    <div className="App" data-theme={theme ? "dark" : "light"}>
       <Navbar />
-      <Home />
-      <Homefooter />
+      <Home theme={theme} setTheme={setTheme} />
+      {/* <Homefooter theme={theme} setTheme={setTheme} /> */}
       <ScrollToTop smooth />
-      <Projects />
-      <About />
-      <Contact />
+      <Projects theme={theme} setTheme={setTheme} />
+      <About theme={theme} setTheme={setTheme} />
+      <Contact theme={theme} setTheme={setTheme} />
     </div>
   );
 }

@@ -4,27 +4,41 @@ import ReactTypingEffect from "react-typing-effect";
 import "./home.css";
 import Resume from "../../assets/VarshithResume.pdf";
 import GitHub from "../../assets/github.svg";
+import GitHubDark from "../../assets/githubDark.svg";
 import Insta from "../../assets/instagram.svg";
-import LinkedIn from "../../assets/linkedin.svg";
-import { Link } from "react-scroll";
+import InstaDark from "../../assets/instagramDark.svg";
 
-export default function Home() {
+import LinkedIn from "../../assets/linkedin.svg";
+import LinkedInDark from "../../assets/linkedinDark.svg";
+
+import { Link } from "react-scroll";
+// import Blob from "../../assets/blob.svg";
+
+export default function Home(props) {
+  const { theme, setTheme } = props;
+  const handelTheme = () => {
+    setTheme(!theme);
+    console.log(theme);
+  };
   return (
-    <div className="homePage" id="home">
-      <div className="details">
+    <div className="" id="home">
+      <div className={`details homePage`}>
         <div className="container xfg1">
           <div className="contacticons">
             <a target="_blank" href="https://github.com/varshithreddy28">
-              <img src={GitHub} alt="Link To git hub" />
+              <img src={theme ? GitHub : GitHubDark} alt="Link To git hub" />
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/varshith-reddy-3967131bb/"
             >
-              <img src={LinkedIn} alt="Link to Linked In" />
+              <img
+                src={theme ? LinkedIn : LinkedInDark}
+                alt="Link to Linked In"
+              />
             </a>
             <a target="_blank" href="https://www.instagram.com/codenddevs/">
-              <img src={Insta} alt="Link To instagram" />
+              <img src={theme ? Insta : InstaDark} alt="Link To instagram" />
             </a>
           </div>
           <div className="details">
@@ -56,7 +70,9 @@ export default function Home() {
           </div>
           <div className="discription">
             <span>
-              I am a self-taught programmer, so I can adapt to the problem that A project might have. I'm passionate about programming, so I'm always enthusiastic about learning new things.
+              I am a self-taught programmer, so I can adapt to the problem that
+              A project might have. I'm passionate about programming, so I'm
+              always enthusiastic about learning new things.
             </span>
           </div>
           <div className="contactme">
@@ -73,6 +89,23 @@ export default function Home() {
             <a href={Resume} download>
               <button id="getresume">Get Resume</button>
             </a>
+          </div>
+
+          <div className="blob">
+            <div className="orderUpdate">
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  // value={check}
+                  onClick={() => handelTheme()}
+                  checked={theme ? null : true}
+                />
+                <span className="slider round"></span>
+                {/* <div style={{ marginTop: "10px" }}>
+              <span className="mode">Delivered</span>
+            </div> */}
+              </label>
+            </div>
           </div>
         </div>
         {/* <div className="bottomHome">
