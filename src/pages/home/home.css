@@ -149,11 +149,11 @@ span.intro {
     font-size: 1.1em;
   }
   a#hireme {
-    padding: 5px 3px;
+    padding: 4px 5px;
     font-size: 10px;
   }
   button#getresume {
-    padding: 5px 3px;
+    padding: 4px 5px;
     font-size: 10px;
   }
 }
