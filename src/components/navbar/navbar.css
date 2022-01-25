@@ -79,6 +79,7 @@ button.contact {
     list-style: none;
     padding: 15px;
     background-color: var(--lightblue);
+    z-index: 1;
   }
   ul.mobilelinks li {
     padding: 15px 0;

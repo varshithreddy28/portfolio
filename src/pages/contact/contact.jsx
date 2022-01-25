@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "./contact.css";
+import Icons from "../../components/contactme/icons";
 // import { SMTPClient } from "emailjs";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({ theme }) => {
   // const { REACT_APP_SERVICE } = process.env;
   const [details, setDetails] = useState({
     name: "",

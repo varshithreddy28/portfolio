@@ -7,7 +7,7 @@ import "../../App.css";
 
 export default function Navbar() {
   const [mobileView, setMobileView] = useState(false);
-  const links = ["home", "projects", "skills", "contact"];
+  const links = ["home", "about", "projects", "skills", "contact"];
 
   useEffect(() => {
     console.log(mobileView);
@@ -61,7 +61,7 @@ export default function Navbar() {
                   // style={linkStyle}
                   activeClass="active"
                   onClick={handelClose}
-                  to={link}
+                  to={link === "about" ? "gnjs2" : link}
                   spy={true}
                   smooth={true}
                   // offset={-70}

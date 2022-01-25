@@ -6,6 +6,8 @@
 }
 .aboutHeader {
   padding: 2.8rem 0;
+  font-family: var(--headdingfont);
+  color: #f7f7ff;
 }
 svg.abouticons {
   font-size: 2em;

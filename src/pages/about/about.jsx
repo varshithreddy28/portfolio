@@ -15,7 +15,7 @@ export const About = ({ theme }) => {
       <div className="container" id="about">
         <div className="">
           <div className="aboutHeader">
-            <h1>My Skills : </h1>
+            <h1 style={{ color: "#f7f7f7" }}>My Skills : </h1>
           </div>
           <div
             data-aos="zoom-in-right"

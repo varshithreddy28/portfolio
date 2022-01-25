@@ -1,4 +1,5 @@
 /* body{} */
 .App {
   background: var(--background);
+  /* overflow: hidden; */
 }

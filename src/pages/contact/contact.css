@@ -11,6 +11,8 @@
 }
 #contactHeader {
   padding: 2em 0;
+  text-align: center;
+  font-family: var(--headdingfont);
 }
 /* .inputLabel {
   display: flex;

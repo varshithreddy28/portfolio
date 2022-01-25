@@ -18,6 +18,7 @@ import Homefooter from './components/homefooter/homefooter';
 import { About } from './pages/about/about';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Icons from "./components/contactme/icons";
 
 function App() {
   useEffect(() => {
@@ -36,12 +37,17 @@ function App() {
   return (
     <div className="App" data-theme={theme ? "dark" : "light"}>
       <Navbar />
+      <Icons theme={theme} setTheme={setTheme} />
+
       <Home theme={theme} setTheme={setTheme} />
-      {/* <Homefooter theme={theme} setTheme={setTheme} /> */}
+      <Homefooter theme={theme} />
+
       <ScrollToTop smooth />
-      <Projects theme={theme} setTheme={setTheme} />
-      <About theme={theme} setTheme={setTheme} />
-      <Contact theme={theme} setTheme={setTheme} />
+      <Projects theme={theme} />
+      <About theme={theme} />
+      <Contact theme={theme} />
+      {/* <Icons theme={theme} /> */}
+
     </div>
   );
 }
