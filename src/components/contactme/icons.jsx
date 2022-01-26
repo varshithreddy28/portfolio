@@ -42,8 +42,8 @@ export default function Icons({ theme, setTheme }) {
             <img src={theme ? Insta : InstaDark} alt="Link To instagram" />
           </a>
 
-          <div className="desktopView">
-            <a target="_blank" onClick={() => handelTheme()}>
+          <div className="desktopView" onClick={() => handelTheme()}>
+            <a target="_blank">
               <img src={theme ? Sun : Moon} alt="Change Theme" />
             </a>
           </div>

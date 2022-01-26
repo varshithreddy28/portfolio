@@ -11,7 +11,7 @@ import Navbar from './components/navbar/navbar';
 import Projects from './pages/projects/projects';
 import Home from './pages/home/home';
 import Contact from './pages/contact/contact';
-import Homefooter from './components/homefooter/homefooter';
+import Homefooter from './pages/homefooter/homefooter';
 
 
 // Named Exports

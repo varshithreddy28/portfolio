@@ -78,7 +78,7 @@ export default function Projects(props) {
     <div className="projectsPage" id="projects">
       <div className="container">
         <div className="projectHeader">
-          <h1>Latest Projects : </h1>
+          <h1>Latest Projects </h1>
         </div>
         <div className="projectList">
           {projects.map((project) => {

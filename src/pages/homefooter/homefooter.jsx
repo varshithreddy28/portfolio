@@ -4,7 +4,7 @@ import "./homefooter.css";
 import { BsCheckCircleFill, BsCheckCircle } from "react-icons/bs";
 import WebSiteBuild from "../../assets/websitebuild.svg";
 
-import Icons from "../contactme/icons";
+// import Icons from "../../components/contactme/icons";
 
 export default function Homefooter({ theme }) {
   const shieldStyle = {
@@ -36,7 +36,7 @@ export default function Homefooter({ theme }) {
         className="bottomHomeHeader bottomHome "
         id="aboutVarshith"
         data-aos="fade-up"
-        data-aos-offset="10"
+        data-aos-duration="3000"
       >
         <div className="bottomImg">
           <img src={WebSiteBuild} alt="Image of construction" />
