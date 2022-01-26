@@ -51,7 +51,7 @@ export default function Navbar() {
         </a> */}
       </label>
 
-      <nav className="navbarPort">
+      <nav className="navbarPort fixed">
         <ul className={mobileView ? "mobilelinks" : "nav_links"}>
           {links.map((link) => {
             return (

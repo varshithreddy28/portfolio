@@ -62,6 +62,10 @@ svg.techIcons {
   transition: transform 0.2s;
 }
 
+.projectHeader h1 {
+  font-size: 4em;
+}
+
 .projectbuttons a.highlight {
   text-decoration: none;
   background: #00568f;

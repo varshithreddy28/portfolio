@@ -68,12 +68,10 @@ export default function Home(props) {
                 duration={500}
                 id="hireme"
               >
-                <span className="getContact">HireMe</span>
+                Hire Me
               </Link>
               <a href={Resume} download>
-                <button id="getresume">
-                  <span className="getContact">GetResume</span>
-                </button>
+                <button id="getresume">Get Resume</button>
               </a>
             </div>
           </div>

@@ -13,7 +13,8 @@
 div#aboutVarshith {
   display: grid;
   grid-template-columns: 0.66fr 1fr;
-  align-items: center;
+  /* align-items: center; */
+  margin-top: 20vh;
 }
 span.text {
   font-size: 2.8em;
@@ -74,11 +75,22 @@ span.hi {
   color: aliceblue;
   position: relative;
   /* left: 40%; */
-  margin-top: 3em;
+  margin-top: 1em;
   font-family: var(--headdingfont);
 }
 .icreate {
   margin-top: 10px;
+}
+
+.headding h1 {
+  font-size: 4em;
+}
+
+.hi {
+  font-weight: bold;
+}
+.mydetails {
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 790px) {
@@ -87,9 +99,15 @@ span.hi {
   }
   div#aboutVarshith {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     align-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* margin-top: 5vh; */
+  }
+}
+@media only screen and (max-width: 390px) {
+  div#aboutVarshith {
+    margin-top: auto;
   }
 }

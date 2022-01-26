@@ -36,7 +36,7 @@ export default function Homefooter({ theme }) {
         className="bottomHomeHeader bottomHome "
         id="aboutVarshith"
         data-aos="fade-up"
-        data-aos-offset="500"
+        data-aos-offset="10"
       >
         <div className="bottomImg">
           <img src={WebSiteBuild} alt="Image of construction" />

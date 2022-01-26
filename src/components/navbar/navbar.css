@@ -64,6 +64,7 @@ button.contact {
     display: block;
     width: 30px;
     margin-top: 12px;
+    cursor: pointer;
   }
   header label a {
     font-size: inherit;
@@ -80,8 +81,11 @@ button.contact {
     padding: 15px;
     background-color: var(--lightblue);
     z-index: 1;
+    cursor: pointer;
   }
   ul.mobilelinks li {
     padding: 15px 0;
   }
+  /* ul.mobilelinks li:hover {
+  } */
 }

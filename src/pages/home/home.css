@@ -1,6 +1,7 @@
 #home {
   color: var(--hometext);
   height: 100vh;
+  font-family: calc(--textfont);
 }
 .container_ {
   margin: 0 4%;
@@ -15,7 +16,7 @@
 }
 span#name {
   color: #a904ee;
-  font-size: 1.2em;
+  font-size: 2.5em;
   letter-spacing: 1px;
   font-family: var(--headdingfont);
 }
@@ -129,13 +130,11 @@ span.intro {
   .imake {
     font-size: 1.2em;
   }
-  a#hireme {
-    padding: 6px 12px;
-    font-size: 15px;
-  }
+  a#hireme,
   button#getresume {
-    padding: 6px 12px;
-    font-size: 15px;
+    padding: 8px 18px;
+    letter-spacing: normal;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 402px) {
@@ -148,12 +147,24 @@ span.intro {
   .imake {
     font-size: 1.1em;
   }
-  a#hireme {
-    padding: 4px 5px;
-    font-size: 10px;
-  }
+  a#hireme,
   button#getresume {
-    padding: 4px 5px;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  a#hireme,
+  button#getresume {
+    padding: 6px;
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 318px) {
+  a#hireme,
+  button#getresume {
+    padding: 2px;
     font-size: 10px;
   }
 }

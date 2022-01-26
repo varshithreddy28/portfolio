@@ -9,6 +9,10 @@
   font-family: var(--headdingfont);
   color: #f7f7ff;
 }
+.aboutHeader h1 {
+  font-size: 4em;
+  /* font-weight: 400; */
+}
 svg.abouticons {
   font-size: 2em;
   margin-right: 10px;

@@ -2,4 +2,8 @@
 .App {
   background: var(--background);
   /* overflow: hidden; */
+  font-family: var(--textfont);
+}
+h1 {
+  font-size: 4em;
 }
