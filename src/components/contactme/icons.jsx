@@ -38,9 +38,9 @@ export default function Icons({ theme, setTheme }) {
               alt="Link to Linked In"
             />
           </a>
-          <a target="_blank" href="https://www.instagram.com/codenddevs/">
+          {/* <a target="_blank" href="https://www.instagram.com/codenddevs/">
             <img src={theme ? Insta : InstaDark} alt="Link To instagram" />
-          </a>
+          </a> */}
 
           <div className="desktopView" onClick={() => handelTheme()}>
             <a target="_blank">

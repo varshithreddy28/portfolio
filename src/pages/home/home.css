@@ -30,16 +30,18 @@ a#hireme {
   border: 2px solid #dbd8e3;
   cursor: pointer;
   transition: transform 0.2s;
+  height: 3em;
 }
 button#getresume {
-  background: #dbd8e3;
+  background: none;
   padding: 11px 24px;
-  border: 2px solid #dbd8e3;
+  border: 2px solid var(--getresume);
   border-radius: 5px;
-  color: #1a1c22;
+  color: var(--getresume);
   font-weight: 600;
   letter-spacing: 1px;
   transition: transform 0.2s;
+  height: 3em;
 }
 
 a#hireme:hover {
@@ -51,6 +53,7 @@ button#getresume:hover {
   transform: scale(1.2);
   background-color: white;
   color: #000;
+  border: white;
 }
 span.intro {
   font-size: 1.75em;
@@ -130,12 +133,6 @@ span.intro {
   .imake {
     font-size: 1.2em;
   }
-  a#hireme,
-  button#getresume {
-    padding: 8px 18px;
-    letter-spacing: normal;
-    font-size: 14px;
-  }
 }
 @media only screen and (max-width: 402px) {
   span.intro {
@@ -147,24 +144,23 @@ span.intro {
   .imake {
     font-size: 1.1em;
   }
-  a#hireme,
-  button#getresume {
-    padding: 6px 14px;
-    font-size: 12px;
-  }
 }
 
-@media only screen and (max-width: 360px) {
-  a#hireme,
-  button#getresume {
-    padding: 6px;
-    font-size: 11px;
+@media only screen and (max-width: 480px) {
+  .contactme {
+    display: grid;
+    justify-content: space-evenly;
+    gap: 2em;
+    grid-template-columns: 0.95fr;
   }
-}
-@media only screen and (max-width: 318px) {
   a#hireme,
   button#getresume {
-    padding: 2px;
-    font-size: 10px;
+    width: 100%;
+  }
+  a#hireme:hover {
+    transform: scale(1.06);
+  }
+  button#getresume:hover {
+    transform: scale(1.06);
   }
 }

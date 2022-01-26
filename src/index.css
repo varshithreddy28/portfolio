@@ -9,6 +9,7 @@
   --iconsbg: #a904ee;
   --headdingfont: "Dongle", sans-serif;
   --textfont: "Source Sans Pro", sans-serif;
+  --getresume: #dbd8e3;
 
   --light: #f7f7f7;
   --lightblue: #cdfffc;
@@ -31,6 +32,7 @@
   --contactbackground: rgb(236, 240, 240);
   --hometext: #504e4e;
   --iconsbg: lightgrey;
+  --getresume: #1f1f20;
 }
 
 /* #2b2726,#403541,#8e43ed,#f0ec8b */
