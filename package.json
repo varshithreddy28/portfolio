@@ -1,7 +1,7 @@
 {
   "name": "myportfolio",
   "version": "0.1.0",
-  "homepage": "varshithreddy28.github.io",
+  "homepage": "httpd://varshithreddy28.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
